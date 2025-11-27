@@ -14,20 +14,14 @@ export default function Hero() {
 
     return (
         <section ref={ref} id="hero" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-gray-900">
-            {/* Background Video with Parallax */}
+            {/* Background Image with Parallax */}
             <motion.div style={{ y }} className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-black/10 z-10" />
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                <div className="absolute inset-0 bg-black/40 z-10" /> {/* Overlay for text readability */}
+                <img
+                    src="/images/education-bg.png"
+                    alt="Education Background"
                     className="w-full h-full object-cover"
-                >
-                    {/* Placeholder video URL - Replace with your actual education themed video */}
-                    <source src="https://assets.mixkit.co/videos/preview/mixkit-students-walking-in-university-hallway-4636-large.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                />
             </motion.div>
 
             <div className="container mx-auto px-6 md:px-12 lg:px-24 z-20 text-center text-white pt-20">
