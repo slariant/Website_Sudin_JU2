@@ -7,21 +7,21 @@ const news = [
         title: "Sosialisasi Kurikulum Merdeka di Jakarta Utara",
         date: "27 Nov 2025",
         author: "Admin",
-        image: "https://images.unsplash.com/photo-1544531696-b761aa51143c?q=80&w=1000&auto=format&fit=crop",
+        image: "/images/news-curriculum.png",
         summary: "Sudin Pendidikan Wilayah II menggelar sosialisasi implementasi Kurikulum Merdeka bagi sekolah-sekolah di wilayah Jakarta Utara."
     },
     {
         title: "Prestasi Siswa Jakut di Olimpiade Sains Nasional",
         date: "25 Nov 2025",
         author: "Humas",
-        image: "https://images.unsplash.com/photo-1564981797816-1043664bf78d?q=80&w=1000&auto=format&fit=crop",
+        image: "/images/news-achievement.png",
         summary: "Selamat kepada para siswa yang telah berhasil meraih medali emas pada ajang OSN tingkat nasional tahun ini."
     },
     {
         title: "Peningkatan Kompetensi Guru Melalui Workshop Digital",
         date: "20 Nov 2025",
         author: "Dikdas",
-        image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1000&auto=format&fit=crop",
+        image: "/images/news-teacher.png",
         summary: "Workshop pemanfaatan teknologi digital dalam pembelajaran diikuti oleh ratusan guru dari berbagai jenjang pendidikan."
     },
 ];
