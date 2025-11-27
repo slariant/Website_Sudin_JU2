@@ -16,13 +16,14 @@ export default function Hero() {
         <section ref={ref} id="hero" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-gray-900">
             {/* Background Image with Parallax */}
             <motion.div style={{ y }} className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-black/40 z-10" /> {/* Overlay for text readability */}
                 <img
                     src="/images/education-bg.png"
                     alt="Education Background"
                     className="w-full h-full object-cover"
                 />
             </motion.div>
+            {/* Overlay for text readability */}
+            <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px] z-10"></div>
 
             <div className="container mx-auto px-6 md:px-12 lg:px-24 z-20 text-center text-white pt-20">
                 <motion.div
@@ -30,12 +31,12 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="inline-block py-1 px-3 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-200 text-sm font-medium mb-6 backdrop-blur-sm">
+                    <span className="inline-block py-1 px-3 rounded-full bg-blue-500/30 border border-blue-400/50 text-blue-100 text-sm font-medium mb-6 backdrop-blur-sm drop-shadow-lg" style={{ textShadow: '0 3px 12px rgba(0,0,0,0.7)' }}>
                         Selamat Datang di Portal Resmi
                     </span>
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight text-white" style={{ textShadow: '0 3px 12px rgba(0,0,0,0.7)' }}>
                         Suku Dinas Pendidikan Wilayah II <br />
-                        <span className="text-blue-400">Jakarta Utara</span>
+                        <span className="text-blue-300">Jakarta Utara</span>
                     </h1>
                 </motion.div>
 
@@ -44,6 +45,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-lg md:text-xl mb-10 text-gray-200 max-w-2xl mx-auto leading-relaxed"
+                    style={{ textShadow: '0 3px 12px rgba(0,0,0,0.7)' }}
                 >
                     Mendukung peningkatan mutu pendidikan yang berkualitas, inklusif, dan inovatif untuk masa depan generasi bangsa.
                 </motion.p>
