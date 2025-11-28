@@ -1,4 +1,4 @@
-// File: C:\Users\KGB 1 - TU\.gemini\antigravity\playground\blazing-lagoon\sudin-pendidikan-next\app\page.tsx
+// File: C:\Users\SDN KGB 01\Documents\Website\Sudin JU 2\Website_Sudin_JU2\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
