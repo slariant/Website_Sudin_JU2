@@ -29,7 +29,7 @@ export default function Hero() {
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
                 >
                     <span className="inline-block py-1 px-3 rounded-full bg-blue-500/30 border border-blue-400/50 text-blue-100 text-sm font-medium mb-6 backdrop-blur-sm drop-shadow-lg" style={{ textShadow: '0 3px 12px rgba(0,0,0,0.7)' }}>
                         Selamat Datang di Portal Resmi
@@ -43,7 +43,7 @@ export default function Hero() {
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
+                    transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1.0] }}
                     className="text-lg md:text-xl mb-10 text-gray-200 max-w-2xl mx-auto leading-relaxed"
                     style={{ textShadow: '0 3px 12px rgba(0,0,0,0.7)' }}
                 >
@@ -53,7 +53,7 @@ export default function Hero() {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
+                    transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1.0] }}
                     className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4"
                 >
                     <motion.button

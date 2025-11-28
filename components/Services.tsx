@@ -20,6 +20,7 @@ export default function Services() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
                         className="text-3xl md:text-4xl font-bold mb-4 text-gray-900"
                     >
                         Layanan Publik
@@ -28,7 +29,7 @@ export default function Services() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.1 }}
+                        transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.1, 0.25, 1.0] }}
                         className="text-gray-600 text-lg"
                     >
                         Akses mudah dan cepat ke berbagai layanan pendidikan.
@@ -41,7 +42,7 @@ export default function Services() {
                             initial={{ scale: 0.9, opacity: 0 }}
                             whileInView={{ scale: 1, opacity: 1 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.05 }}
+                            transition={{ duration: 0.8, delay: index * 0.05, ease: [0.25, 0.1, 0.25, 1.0] }}
                             className="group p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg hover:border-blue-200 transition-all cursor-pointer flex items-center justify-between"
                         >
                             <div className="flex items-center space-x-4">

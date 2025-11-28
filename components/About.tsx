@@ -34,6 +34,7 @@ export default function About() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
                         className="text-3xl md:text-4xl font-bold mb-6 text-gray-900"
                     >
                         Tentang Kami
@@ -42,7 +43,7 @@ export default function About() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1.0] }}
                         className="text-gray-600 text-lg leading-relaxed"
                     >
                         Suku Dinas Pendidikan Wilayah II Jakarta Utara berkomitmen untuk mewujudkan layanan pendidikan yang prima, transparan, dan akuntabel demi terciptanya generasi unggul yang siap bersaing di era global.
@@ -56,7 +57,7 @@ export default function About() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
+                            transition={{ duration: 0.8, delay: index * 0.1, ease: [0.25, 0.1, 0.25, 1.0] }}
                             className="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition-all duration-300 border border-gray-100 group"
                         >
                             <div className="mb-6 bg-white w-16 h-16 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">

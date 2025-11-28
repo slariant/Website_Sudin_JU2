@@ -36,6 +36,7 @@ export default function News() {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
+                            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
                             className="text-3xl md:text-4xl font-bold mb-4 text-gray-900"
                         >
                             Berita Terkini
@@ -44,7 +45,7 @@ export default function News() {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.1 }}
+                            transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.1, 0.25, 1.0] }}
                             className="text-gray-600 text-lg"
                         >
                             Informasi terbaru seputar pendidikan di Jakarta Utara.
@@ -54,6 +55,7 @@ export default function News() {
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
                         className="hidden md:block text-blue-600 font-semibold hover:text-blue-700 transition-colors"
                     >
                         Lihat Semua Berita &rarr;
@@ -67,7 +69,7 @@ export default function News() {
                             initial={{ opacity: 0, x: 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.2 }}
+                            transition={{ duration: 0.8, delay: index * 0.2, ease: [0.25, 0.1, 0.25, 1.0] }}
                             className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group cursor-pointer"
                         >
                             <div className="relative h-56 overflow-hidden">

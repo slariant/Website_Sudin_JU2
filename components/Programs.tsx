@@ -38,6 +38,7 @@ export default function Programs() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
                         className="text-3xl md:text-4xl font-bold mb-4 text-gray-900"
                     >
                         Program Unggulan
@@ -46,7 +47,7 @@ export default function Programs() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.1 }}
+                        transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.1, 0.25, 1.0] }}
                         className="text-gray-600 max-w-2xl mx-auto text-lg"
                     >
                         Berbagai inisiatif strategis yang kami jalankan untuk meningkatkan kualitas pendidikan di Jakarta Utara.
@@ -61,7 +62,7 @@ export default function Programs() {
                             whileInView={{ opacity: 1, y: 0 }}
                             whileHover={{ y: -5 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
+                            transition={{ duration: 0.8, delay: index * 0.1, ease: [0.25, 0.1, 0.25, 1.0] }}
                             className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group"
                         >
                             <div className={`p-6 ${program.color} flex justify-center items-center h-32`}>

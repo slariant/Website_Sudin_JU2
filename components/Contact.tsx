@@ -11,6 +11,7 @@ export default function Contact() {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
                     >
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Hubungi Kami</h2>
                         <p className="text-gray-600 mb-8 text-lg">
@@ -74,7 +75,7 @@ export default function Contact() {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1.0] }}
                         className="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-lg"
                     >
                         <h3 className="text-2xl font-bold mb-6 text-gray-900">Kirim Pesan</h3>

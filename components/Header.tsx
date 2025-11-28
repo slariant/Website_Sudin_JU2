@@ -29,6 +29,7 @@ export default function Header() {
         <motion.header
             initial={{ y: -100 }}
             animate={{ y: 0 }}
+            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
                 }`}
         >
