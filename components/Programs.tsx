@@ -63,7 +63,7 @@ export default function Programs() {
                             whileHover={{ y: -5 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: index * 0.1, ease: [0.25, 0.1, 0.25, 1.0] }}
-                            className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group"
+                            className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow transition-colors duration-300 group"
                         >
                             <div className={`p-6 ${program.color} flex justify-center items-center h-32`}>
                                 <div className="p-3 bg-white/20 rounded-full backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">

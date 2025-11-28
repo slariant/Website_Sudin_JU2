@@ -43,7 +43,7 @@ export default function Services() {
                             whileInView={{ scale: 1, opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: index * 0.05, ease: [0.25, 0.1, 0.25, 1.0] }}
-                            className="group p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg hover:border-blue-200 transition-all cursor-pointer flex items-center justify-between"
+                            className="group p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg hover:border-blue-200 transition-shadow transition-colors cursor-pointer flex items-center justify-between"
                         >
                             <div className="flex items-center space-x-4">
                                 <div className="p-3 bg-blue-50 rounded-lg text-blue-600 group-hover:rotate-6 transition-transform duration-300 group-hover:bg-blue-600 group-hover:text-white">
