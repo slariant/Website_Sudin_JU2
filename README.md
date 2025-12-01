@@ -28,6 +28,13 @@ This is a Next.js project built with Tailwind CSS, TypeScript, and Framer Motion
 
 3.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+4.  Admin Login
+    ```user
+    Email : admin@jakarta.go.id
+    Password : password
+   
+
+
 ## Features
 
 -   **Next.js 14 App Router**: Modern and efficient routing.
