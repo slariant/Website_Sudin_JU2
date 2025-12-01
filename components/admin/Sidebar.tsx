@@ -86,7 +86,10 @@ export default function Sidebar() {
 
             <div className="p-4 border-t border-gray-100">
                 <button
-                    onClick={() => router.push("/login")}
+                    onClick={() => {
+                        document.cookie = "auth_token=; path=/; max-age=0";
+                        router.push("/login");
+                    }}
                     className={cn(
                         "flex items-center w-full px-3 py-3 rounded-lg text-red-600 hover:bg-red-50 transition-colors",
                         collapsed && "justify-center"

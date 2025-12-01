@@ -37,6 +37,8 @@ export default function LoginPage() {
         // Simulate API call
         setTimeout(() => {
             if (data.email === "admin@jakarta.go.id" && data.password === "password") {
+                // Set cookie that expires in 1 day
+                document.cookie = "auth_token=true; path=/; max-age=86400; SameSite=Strict";
                 router.push("/admin");
             } else {
                 setError("Email atau password salah");
