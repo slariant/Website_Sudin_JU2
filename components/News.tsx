@@ -1,27 +1,30 @@
 "use client";
 import { motion } from "framer-motion";
 import { Calendar, User } from "lucide-react";
+import { Image as IKImage } from "@imagekit/next";
+
+const urlEndpoint = "https://ik.imagekit.io/qiplf6uhb";
 
 const news = [
     {
         title: "Sosialisasi Kurikulum Merdeka di Jakarta Utara",
         date: "27 Nov 2025",
         author: "Admin",
-        image: "https://ik.imagekit.io/qiplf6uhb/images/news-curriculum.png",
+        image: "/images/news-curriculum.png",
         summary: "Sudin Pendidikan Wilayah II menggelar sosialisasi implementasi Kurikulum Merdeka bagi sekolah-sekolah di wilayah Jakarta Utara."
     },
     {
         title: "Prestasi Siswa Jakut di Olimpiade Sains Nasional",
         date: "25 Nov 2025",
         author: "Humas",
-        image: "https://ik.imagekit.io/qiplf6uhb/images/news-achievement.png",
+        image: "/images/news-achievement.png",
         summary: "Selamat kepada para siswa yang telah berhasil meraih medali emas pada ajang OSN tingkat nasional tahun ini."
     },
     {
         title: "Peningkatan Kompetensi Guru Melalui Workshop Digital",
         date: "20 Nov 2025",
         author: "Dikdas",
-        image: "https://ik.imagekit.io/qiplf6uhb/images/news-curriculum.png",
+        image: "/images/news-curriculum.png",
         summary: "Workshop pemanfaatan teknologi digital dalam pembelajaran diikuti oleh ratusan guru dari berbagai jenjang pendidikan."
     },
 ];
@@ -73,12 +76,16 @@ export default function News() {
                             className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group cursor-pointer"
                         >
                             <div className="relative h-56 overflow-hidden">
-                                <img
+                                <IKImage
+                                    urlEndpoint={urlEndpoint}
                                     src={item.image}
                                     alt={item.title}
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                    loading="lazy"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
-                                <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10">
                                     Berita
                                 </div>
                             </div>

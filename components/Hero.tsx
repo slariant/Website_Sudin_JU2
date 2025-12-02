@@ -2,6 +2,9 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useRef } from "react";
+import { Image as IKImage } from "@imagekit/next";
+
+const urlEndpoint = "https://ik.imagekit.io/qiplf6uhb";
 
 export default function Hero() {
     const ref = useRef(null);
@@ -16,10 +19,15 @@ export default function Hero() {
         <section ref={ref} id="hero" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-gray-900">
             {/* Background Image with Parallax */}
             <motion.div style={{ y }} className="absolute inset-0 z-0">
-                <img
-                    src="https://ik.imagekit.io/qiplf6uhb/images/education-bg.png"
+                <IKImage
+                    urlEndpoint={urlEndpoint}
+                    src="/images/education-bg.png"
                     alt="Education Background"
                     className="w-full h-full object-cover"
+                    loading="eager"
+                    fill
+                    priority
+                    sizes="100vw"
                 />
             </motion.div>
             {/* Overlay for text readability */}
