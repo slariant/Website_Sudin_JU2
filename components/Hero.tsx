@@ -17,7 +17,7 @@ export default function Hero() {
             {/* Background Image with Parallax */}
             <motion.div style={{ y }} className="absolute inset-0 z-0">
                 <img
-                    src="/images/education-bg.png"
+                    src="https://ik.imagekit.io/qiplf6uhb/images/education-bg.png"
                     alt="Education Background"
                     className="w-full h-full object-cover"
                 />
