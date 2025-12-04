@@ -1,0 +1,74 @@
+"use client";
+import { motion } from "framer-motion";
+import { BookOpen, Users, Monitor, Award } from "lucide-react";
+
+const features = [
+    {
+        icon: <BookOpen className="w-8 h-8 text-blue-600" />,
+        title: "Peningkatan Akses",
+        description: "Memastikan setiap anak mendapatkan hak pendidikan yang layak dan merata.",
+    },
+    {
+        icon: <Users className="w-8 h-8 text-blue-600" />,
+        title: "Pembinaan Sekolah",
+        description: "Melakukan pendampingan intensif untuk sekolah negeri dan swasta.",
+    },
+    {
+        icon: <Monitor className="w-8 h-8 text-blue-600" />,
+        title: "Transformasi Digital",
+        description: "Mendorong digitalisasi dalam proses pembelajaran dan administrasi.",
+    },
+    {
+        icon: <Award className="w-8 h-8 text-blue-600" />,
+        title: "Peningkatan Mutu GTK",
+        description: "Mengembangkan kompetensi Guru dan Tenaga Kependidikan secara berkelanjutan.",
+    },
+];
+
+export default function About() {
+    return (
+        <section id="about" className="py-24 bg-white">
+            <div className="container mx-auto px-6 md:px-12 lg:px-24">
+                <div className="text-center mb-16 max-w-3xl mx-auto">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0] }}
+                        className="text-3xl md:text-4xl font-bold mb-6 text-gray-900"
+                    >
+                        Tentang Kami
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1.0] }}
+                        className="text-gray-600 text-lg leading-relaxed"
+                    >
+                        Suku Dinas Pendidikan Wilayah II Jakarta Utara berkomitmen untuk mewujudkan layanan pendidikan yang prima, transparan, dan akuntabel demi terciptanya generasi unggul yang siap bersaing di era global.
+                    </motion.p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {features.map((feature, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: index * 0.1, ease: [0.25, 0.1, 0.25, 1.0] }}
+                            className="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition-shadow transition-colors duration-300 border border-gray-100 group"
+                        >
+                            <div className="mb-6 bg-white w-16 h-16 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
+                                {feature.icon}
+                            </div>
+                            <h3 className="text-xl font-bold mb-3 text-gray-900">{feature.title}</h3>
+                            <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
