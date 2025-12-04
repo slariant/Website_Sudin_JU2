@@ -1,4 +1,4 @@
-// File: C:\Users\SDN KGB 01\Documents\Website\Sudin JU 2\Website_Sudin_JU2\app\layout.tsx
+// File: C:\ZK\Project Sudindik\Website_Sudin_JU2\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
