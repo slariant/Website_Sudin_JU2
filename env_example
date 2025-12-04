@@ -1,8 +1,0 @@
-GROQ_API_KEY=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
-
-DB_NAME=aska_sudin
-DB_USER=postgres
-DB_PASS=root
-DB_HOST=localhost
-DB_PORT=5432
-DB_SSLMODE=disable
